@@ -1,16 +1,17 @@
-# Titanic
+# The Blood Transfusion Service Center Dataset
 
-## Problem Statement
-The sinking of the RMS Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This sensational tragedy shocked the international community and led to better safety regulations for ships.
+### Introduction 
+Blood donation has been around for a long time. The first successful recorded transfusion was between two dogs in 1665, and the first medical use of human blood in a transfusion occurred in 1818. Even today, donated blood remains a critical resource during emergencies.
 
-One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
+Our dataset is from a mobile blood donation vehicle in Taiwan. The Blood Transfusion Service Center drives to different universities and collects blood as part of a blood drive. 
 
-In this challenge, we are tasked to complete the analysis of what sorts of people were likely to survive.
+### Problem Statement
+We want to predict whether or not a donor will give blood the next time the vehicle comes to campus.
 
-## Approach
-First, we conduct simple exploratory data analysis, data cleaning  and data imputation using R (the code can be found [here](http://rpubs.com/ngbolin/titanic_data_cleaning)). Following which, we use Python to implement various machine learning algorithms that are suited for binary classification -- Random Forest Algorithms, Gradient Boosting Models (GBM), Logistic Regression Models and a Simple Artificial Neural Network.
+### Approach
+As we are asked to provide the probability that a particular donor will donate blood (a binary variable), we use 3 different types of classification models - Logistic Regression, Random Forest and Gradient Boosting (AdaBoost).
 
-## Model Evaluation
-We will be using accuracy as our evaluation metric.
+To decide on which model to use for the prediction of the test dataset, we use the logistic loss, or cross-entropy loss as our evaluation metric.
 
-## Result
+### Result
+It turns out that the logistic model scored the best using the entropy loss metric. Using the simple logistic model, our entropy loss on the test dataset was 0.4458. This score was good enough to place us at rank 383 out of 2992 competitors (top 13th percentile) - 16 Jul.
