@@ -14,4 +14,4 @@ As we are asked to provide the probability that a particular donor will donate b
 To decide on which model to use for the prediction of the test dataset, we use the logistic loss, or cross-entropy loss as our evaluation metric.
 
 ### Result
-It turns out that the logistic model scored the best using the entropy loss metric. Using the simple logistic model, our entropy loss on the test dataset was 0.4440. This score was good enough to place us at rank 276 out of 3238 competitors (top 13th percentile) - 1 Sep.
+It turns out that the logistic model scored the best using the entropy loss metric. Using the simple logistic model, our entropy loss on the test dataset was 0.4440. This score was good enough to place us at rank 276 out of 3238 competitors (top 9th percentile) - 1 Sep.
